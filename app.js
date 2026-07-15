@@ -1,8 +1,9 @@
 let boxes = document.querySelectorAll(".box");
 let newbttn = document.querySelector("#new-game");
 let resetbttn = document.querySelector("#reset");
-let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
+let msgContainer = document.querySelector(".msg-container");
+
 
 let currTurn = true;
 let count = 0;
@@ -18,12 +19,14 @@ const winnerPattan = [
     [6, 7, 8],
 ];
 
+
 const resetGame = () =>{
     currTurn = true;
     count = 0;
     enableBoxes();
     msgContainer.classList.add("hide");
 }
+
 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
@@ -43,6 +46,7 @@ boxes.forEach((box) => {
         }
     })
 })
+
 
 const gameDraw = () =>{
     msg.innerText = `Game was a Draw.`
@@ -86,7 +90,6 @@ const checkWinner = () => {
         }
     }
 };
-
 
 resetbttn.addEventListener("click",resetGame);
 newbttn.addEventListener("click",resetGame);
