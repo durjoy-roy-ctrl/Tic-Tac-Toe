@@ -8,9 +8,11 @@ body{
     text-align: center;
 }
 
+
 h1{
     color: #dfe5e6;
 }
+
 
 .container{
     height: 70vh;
@@ -64,12 +66,11 @@ h1{
     font-weight: bold;
 }
 
-
-
 #msg{
     color: brown;
     font-size: 5vmin;
 }
+
 
 .msg-container{
     height: 100vmin;
